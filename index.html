@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aplicaci&oacute;n Algoritmo AES</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Aplicaci&oacute;n Del Algoritmo de Cifrado AES</h1>
+      <form class="forma" id="clave-cifrado">
+        <div class="control">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+        <div class="control">
+          <label for="cifrado">Clave de cifrado</label>
+          <div class="input-btn">
+            <input type="text" name="cifrado" id="cifrado">
+            <button type="submit" class="btn btn-clave-proporcionada">Enviar clave proporcionada</button>
+          </div>
+        </div>
+          <div class="control">
+            <button type="submit" class="btn btn-clave-generada">Generar clave aleatoria</button>
+          </div>
+      </form>
+      <form class="forma" id="mensaje-cifrado">
+        <div class="control">
+          <label for="mensaje">Mensaje a cifrar</label>
+          <div class="input-btn">
+            <input type="text" name="mensaje" id="mensaje">
+            <button type="submit" class="btn btn-clave-proporcionada">Cifrar el mensaje</button>
+          </div>
+        </div>
+      </form>
+      <form class="forma" id="mensaje-descifrado">
+        <div class="control btn-input">
+          <button type="submit" class="btn btn-clave-proporcionada">Descifrar el mensaje</button>
+        </div>
+      </form>
+      <footer class="forma">
+        <p>Antonio Rodr&iacute;guez Alanis - 153235</p>
+        <p>Sergio S&aacute;nchez Orozco - 159984</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
